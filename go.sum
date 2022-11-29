@@ -1,6 +1,6 @@
 github.com/BurntSushi/toml v1.2.1 h1:9F2/+DoOYIOksmaJFPw1tGFy1eDnIJXg+UHjuD8lTak=
-github.com/aloeproject/gcommon v0.0.0-20221129074614-c59b75f6feed h1:/nyVpP2G/+bPatP0aEjQbETEGHjjK8eMfVgLakW/ttg=
-github.com/aloeproject/gcommon v0.0.0-20221129074614-c59b75f6feed/go.mod h1:5NhMnKwR8Kv9uiNBe98dFvpCq5hKduetxelQo5fUii8=
+github.com/aloeproject/toolbox v0.0.0-20221129101620-64caa7771f09 h1:EfSfZgAf1wldvTXZ1itQKGN6iifKz7j+DckQhPgDlzY=
+github.com/aloeproject/toolbox v0.0.0-20221129101620-64caa7771f09/go.mod h1:KmMXsP0AQid0mpS95B7BlG8hy/zG+ZaZnwGC8faAyck=
 github.com/benbjohnson/clock v1.1.0 h1:Q92kusRqC1XV2MjkWETPvjJVqKetz1OzxZB7mHJLju8=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=

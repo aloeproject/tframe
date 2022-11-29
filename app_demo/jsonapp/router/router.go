@@ -3,10 +3,10 @@ package router
 import (
 	"context"
 	"encoding/json"
-	"github.com/aloeproject/gcommon/logger"
 	"github.com/aloeproject/tframe/app_demo/jsonapp/controller"
 	"github.com/aloeproject/tframe/iface"
 	"github.com/aloeproject/tframe/tnet"
+	"github.com/aloeproject/toolbox/logger"
 )
 
 var _ iface.IRouter = (*Router)(nil)

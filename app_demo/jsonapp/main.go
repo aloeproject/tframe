@@ -3,9 +3,9 @@ package main
 import (
 	"context"
 	"fmt"
-	"github.com/aloeproject/gcommon/logger"
 	"github.com/aloeproject/tframe/app_demo/jsonapp/router"
 	"github.com/aloeproject/tframe/frame"
+	"github.com/aloeproject/toolbox/logger"
 	"runtime"
 	"sync"
 	"time"

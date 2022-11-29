@@ -2,7 +2,7 @@ package frame
 
 import (
 	"context"
-	"github.com/aloeproject/gcommon/logger"
+	"github.com/aloeproject/toolbox/logger"
 	"testing"
 )
 

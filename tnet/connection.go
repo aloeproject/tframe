@@ -2,8 +2,8 @@ package tnet
 
 import (
 	"context"
-	"github.com/aloeproject/gcommon/logger"
 	"github.com/aloeproject/tframe/iface"
+	"github.com/aloeproject/toolbox/logger"
 	"github.com/google/uuid"
 	"io"
 	"net"

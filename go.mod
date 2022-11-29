@@ -3,7 +3,7 @@ module github.com/aloeproject/tframe
 go 1.18
 
 require (
-	github.com/aloeproject/gcommon v0.0.0-20221129074614-c59b75f6feed
+	github.com/aloeproject/toolbox v0.0.0-20221129101620-64caa7771f09
 	github.com/google/uuid v1.3.0
 )
 

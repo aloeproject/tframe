@@ -51,6 +51,10 @@ type DefaultRequest struct {
 	Msg  iface.IRMessage
 }
 
+func (d *DefaultRequest) GetMID() int32 {
+	return d.Msg.GetMID()
+}
+
 func (d *DefaultRequest) GetHeadData() []byte {
 	return d.Msg.GetHeadData()
 }

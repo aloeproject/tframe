@@ -38,26 +38,35 @@ var _ iface.IMessage = (*OnceQueryMessage)(nil)
 
 type OnceQueryMessage struct {
 	data []byte
+	m    int32
 }
 
-func (o OnceQueryMessage) GetDataLen() int {
+func (o *OnceQueryMessage) GetMID() int32 {
+	return o.m
+}
+
+func (o *OnceQueryMessage) SetMID(i int32) {
+	o.m = i
+}
+
+func (o *OnceQueryMessage) GetDataLen() int {
 	return len(o.data)
 }
 
-func (o OnceQueryMessage) GetData() []byte {
+func (o *OnceQueryMessage) GetData() []byte {
 	return o.data
 }
 
-func (o OnceQueryMessage) GetHeadData() []byte {
+func (o *OnceQueryMessage) GetHeadData() []byte {
 	return nil
 }
 
-func (o OnceQueryMessage) SetHeadData(bytes []byte) {
+func (o *OnceQueryMessage) SetHeadData(bytes []byte) {
 
 }
 
-func (o OnceQueryMessage) SetData(bytes []byte) {
+func (o *OnceQueryMessage) SetData(bytes []byte) {
 }
 
-func (o OnceQueryMessage) SetHeadLen(i int) {
+func (o *OnceQueryMessage) SetHeadLen(i int) {
 }

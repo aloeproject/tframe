@@ -7,8 +7,17 @@ var _ iface.IMessage = (*DefaultMessage)(nil)
 type DefaultMessage struct {
 	head []byte
 	body []byte
+	mid  int32
 
 	bodyLength int
+}
+
+func (d *DefaultMessage) GetMID() int32 {
+	return d.mid
+}
+
+func (d *DefaultMessage) SetMID(i int32) {
+	d.mid = i
 }
 
 func (d *DefaultMessage) SetHeadLen(i int) {

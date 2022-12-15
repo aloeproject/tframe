@@ -17,7 +17,7 @@ type IServer interface {
 	CallOnConnStop(conn IConnection)
 }
 
-//请求中使用的连接方法
+// 请求中使用的连接方法
 type IQConnection interface {
 	SendMsg([]byte)
 	GetTCPConnection() *net.TCPConn
@@ -47,17 +47,18 @@ type IConnManager interface {
 type IRMessage interface {
 	GetDataLen() int //获取消息数据段长度
 	GetData() []byte //获取消息内容
-
+	GetMID() int32   //获取消息id
 	GetHeadData() []byte
 }
 
 /*
-	将请求的一个消息封装到message中，定义抽象层接口
+将请求的一个消息封装到message中，定义抽象层接口
 */
 type IMessage interface {
 	IRMessage
 	SetHeadData([]byte) //设置head数据
 	SetData([]byte)     //设计消息内容
+	SetMID(int32)       //设置mid
 	SetHeadLen(int)
 }
 
@@ -83,7 +84,7 @@ type IRouter interface {
 }
 
 /*
-  消息管理
+消息管理
 */
 type IHandleManger interface {
 	StartWorkPool() //启动work 工作池
